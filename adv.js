@@ -34,3 +34,11 @@ console.log(
         { id: 3, price: -500},
     ])
 )
+
+async function firstSixIncomplete(usersId) {
+    const promise = await fetch("https://jasonplaceholder.typicode.com/todos")
+    const result = await promise.json()
+    const incomleteTasks = result.filter(elem => elem.completed)
+}
+
+console.log(firstSixImcomplete(6))
