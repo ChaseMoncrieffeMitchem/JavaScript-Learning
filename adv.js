@@ -58,3 +58,17 @@ function showRating(rating) {
 }
 
 console.log(showRating(3.5))
+
+function sortHighToLow(numbers) {
+    return numbers.sort((a, b) => {
+        return b.price - a.price
+    })
+}
+
+console.log(
+    sortHighToLow([
+        { id: 1, price: 50}
+        { id: 2, price: 0}
+        { id: 3, price: -500}
+    ])
+)
