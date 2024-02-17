@@ -72,3 +72,15 @@ console.log(
         { id: 3, price: -500}
     ])
 )
+
+async function postsByUser(userId) {
+    const promise = await fetch("https://jsonplacehol.typicode.com/posts")
+
+    const result = await promise.json()
+
+    const posts = result.filter(elem => elem.userId === userId)
+
+    console.log(posts)
+}
+
+postsByUser(6)
