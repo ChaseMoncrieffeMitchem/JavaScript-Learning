@@ -84,3 +84,7 @@ async function postsByUser(userId) {
 }
 
 postsByUser(6)
+
+const reversedString = (str) => {
+    return str.split("").reverse().join("")
+}
