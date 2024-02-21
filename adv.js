@@ -88,3 +88,11 @@ postsByUser(6)
 const reversedString = (str) => {
     return str.split("").reverse().join("")
 }
+
+const reverseInteger = (int) => {
+    const reversed = int.toString().split("").reverse().join("");
+
+    return parseInt(reversed) * Math.sign(int);
+}
+
+module.exports = reverseInteger
