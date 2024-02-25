@@ -117,3 +117,12 @@ for (const char of str) {
 for (const [char, count] of charMap) {
     console.log(char, count)
 }
+
+const arrayChunk = (array, size) => {
+    const chunkedArray = [];
+
+    for (let i = 0; i < array.length; i += size) {
+        const subaray = array.sclice(i, i + size);
+        chucnkedArray.push(subarray);
+    }
+}
